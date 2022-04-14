@@ -9,7 +9,7 @@ public List<List> subsets(int[] nums) {
         List list = new ArrayList<>();
         for(int j = 0 ;j<=length-1;j++){ //entering the array
             int bitshift = (1<<j);
-            if((i & bitshift) !=0){      /check set bit  to add in sublist or not
+            if((i & bitshift) !=0){      //check set bit  to add in sublist or not
                 list.add(nums[j]);
                                   }
                                         }
