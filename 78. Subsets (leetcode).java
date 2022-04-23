@@ -21,44 +21,5 @@ public List<List> subsets(int[] nums) {
                  
                 
                 
-/*previous attempt without using List
-import java.util.*;  
-public class NewClass {
-  public static void main(String[]args){
-     Scanner sc= new Scanner(System.in);
-    String s=sc.next();
-    Vector < Integer > vec = new Vector < Integer > ();
-    String numberOnly = s.replaceAll("[^0-9]", "");
-    for(int i=0; i<numberOnly.length(); i++){
-      vec.add(Integer. parseInt(numberOnly.substring(i, i+1)));
 
-    }
-    
-  //System.out.println("[]");
-  for(int i=0; i<vec.size()+1; i++){
-      for(int j=i; j<vec.size()+1;j++){
-          if(i== 0 && j== 0){
-            System.out.print("[");
-            System.out.print("[], ");//for formating
-          }
-          if(i!=j){
-        List<Integer> subList = vec.subList(i,j);    
-         
-        System.out.print(subList);
-         
-         if(i == vec.size()-1){
-            System.out.print("]");
-            continue; //for formating
-                     }
-        System.out.print(", ");
-          }
-         
-      }
-      
-  
-  
-    
-}   
-}}
-*/ //It work with most cases but takes much effort in taking input and formatting output.
 
