@@ -1,2 +1,2 @@
 # Problem_Solving
-I submit my solutions to problems on codeleet, codeforces and similar websites and/or online judges.
+I submit my solutions to problems on leetcode, codeforces and similar websites and/or online judges.
