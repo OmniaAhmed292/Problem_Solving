@@ -1,4 +1,4 @@
-//Status: Accepted
+//Problem: https://leetcode.com/problems/find-peak-element/
 class Solution {
    public static int findPeakElement(int[] nums) {
         //Get the middle start, middle and end indexes.
