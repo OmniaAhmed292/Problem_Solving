@@ -1,5 +1,10 @@
-/* https://leetcode.com/problems/backspace-string-compare/ */
+/* https://leetcode.com/problems/backspace-string-compare/ 
 
+There's two approaches one using one stack and the other using two stacks.
+
+*/
+
+// Approach with only one stack
 class Solution {
 public:
     bool backspaceCompare(string s, string t) {
@@ -44,6 +49,48 @@ public:
     }
        // if the stack is not empty after the string is then the string is smaller and they are not equal.
         return stack.empty();
+    }
+   
+    
+};
+
+
+
+//Approach with two stacks
+class Solution {
+public:
+    bool backspaceCompare(string s, string t) {
+          stack<char> stack1;
+          stack<char> stack2;
+        for(int i=0;i<s.length();i++){
+            if(s[i]=='#'){
+                if(stack1.empty()) continue;
+                stack1.pop();
+            }   
+            else{
+                stack1.push(s[i]);
+            }
+        }
+        for(int i=0;i<t.length();i++){
+            if(t[i]=='#'){
+                if(stack2.empty()) continue;
+                stack2.pop();
+            }   
+            else{
+                stack2.push(t[i]);
+            }
+        }
+        while(true){
+            if(stack1.empty()||stack2.empty()) break;
+            if(stack1.top()!=stack2.top()) return false;
+            stack1.pop();
+            stack2.pop();
+            
+        }
+        
+        
+       return stack2.empty()&&stack1.empty();
+        
     }
    
     
