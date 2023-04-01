@@ -1,6 +1,5 @@
-/*
-https://leetcode.com/problems/find-the-town-judge/description/?envType=study-plan&id=data-structure-ii
-*/
+//https://leetcode.com/problems/find-the-town-judge/description/?envType=study-plan&id=data-structure-ii
+
 
 /*
 Easy code, uses Frequency array

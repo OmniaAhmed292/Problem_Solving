@@ -1,4 +1,5 @@
-//https://leetcode.com/problems/sort-colors/description/
+//https://leetcode.com/problems/sort-colors/
+
 /* keys: bubble sort/ brute-force */ 
 
 class Solution {

@@ -1,4 +1,5 @@
-//https://leetcode.com/problems/valid-sudoku/description/
+//https://leetcode.com/problems/valid-sudoku/
+
 /*
 it takes O(n) space and O(n*n) time. 
 Hope to make it better in the future 

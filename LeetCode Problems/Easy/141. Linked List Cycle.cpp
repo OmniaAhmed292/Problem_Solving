@@ -1,6 +1,5 @@
-/* problem link
-https://leetcode.com/problems/linked-list-cycle/submissions/
-*/
+//https://leetcode.com/problems/linked-list-cycle/submissions/
+
 
 /**
  * Definition for singly-linked list.

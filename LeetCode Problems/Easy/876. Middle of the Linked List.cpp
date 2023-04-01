@@ -1,6 +1,5 @@
-/*
-https://leetcode.com/problems/middle-of-the-linked-list/
-*/
+//https://leetcode.com/problems/middle-of-the-linked-list/
+
 
 /**
  * Definition for singly-linked list.

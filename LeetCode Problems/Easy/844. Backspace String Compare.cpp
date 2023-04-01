@@ -1,4 +1,4 @@
-/* https://leetcode.com/problems/backspace-string-compare/ 
+//https://leetcode.com/problems/backspace-string-compare/ 
 
 There's two approaches one using one stack and the other using two stacks.
 
