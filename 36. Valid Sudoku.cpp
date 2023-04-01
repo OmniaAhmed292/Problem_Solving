@@ -21,15 +21,14 @@ public:
                     if(Col.count(board[j][i]))return false;
                     Col.insert(board[j][i]);
                 }
-
- 
             }
             Row.clear();
             Col.clear();
         }
         return true;
     }
-
+    
+    
     bool isValidSquare(vector<vector<char>>& board){
         set <int> Square;
         int offsetC=0;
@@ -43,8 +42,7 @@ public:
                         Square.insert(board[i+offsetC][j+offsetR]);
 
                 }
-                //cout<<i<<" "<<j<<endl;
-                //cout<<"OFF"<<offsetR<<" "<<offsetC<<endl;
+                //trying to iterate over the whole board using offset.
                 j++;
                 if(j==3){
                     i++;
@@ -54,21 +52,18 @@ public:
                  
             }
             Square.clear();
-            //cout<<"Im here";
-            j=0;
-            i=0;
+            j=0; i=0;
             offsetR+=3;
                 if(offsetR==9){ 
                     offsetC+=3;
                     if(offsetC==9) break;
-                   
                     offsetR=0;
                 }
-            
         } 
         return true;
     }
 
+    
     bool isValidSudoku(vector<vector<char>>& board) {
          
         
