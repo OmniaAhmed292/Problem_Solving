@@ -1,7 +1,7 @@
 //Given a string of digits ‘1’, ‘2’, ‘3’, and ‘4’,
 // rearrange the digits using divide and conquer algorithm
 // to print ‘3’ first, then ‘1’, then ‘2’, then ‘4’.
-
+//Time complexity O(nlog(n)) since it's a merge sort basically
 import java.util.*;
 
 
