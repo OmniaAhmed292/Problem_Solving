@@ -50,7 +50,7 @@ public  class ArrangeDigits3124 {
         return result;
     }
     public static void main(String[] args) {
-        String nums = "123";
+        String nums = "123443211243";
         int[] result = ArrangeDigits3124.arrange(nums);
         for (int num : result) {
             System.out.print(num + " ");
