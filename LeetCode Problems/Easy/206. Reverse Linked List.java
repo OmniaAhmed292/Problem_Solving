@@ -1,8 +1,23 @@
 //https://leetcode.com/problems/reverse-linked-list/description/
 
-
 //Iterative approach
+public ListNode reverseList(ListNode head) {
+        ListNode prev = null;
+        ListNode curr = head;
+        ListNode next = null;
+        while(curr != null){
+            // save the next node
+            next = curr.next;
+            // reverse the pointer
+            curr.next = prev;
+            // move the pointers
+            prev = curr;
+            curr = next;
+        }
+        return prev;
+    }
 
+//C++
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -12,7 +27,7 @@
  *     ListNode(int x) : val(x), next(nullptr) {}
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
- */
+ 
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
@@ -38,5 +53,5 @@ public:
     return current;     
     }
 };
-
+*/
 //**********************************************************************
