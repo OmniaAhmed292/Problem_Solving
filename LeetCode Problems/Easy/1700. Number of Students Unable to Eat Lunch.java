@@ -1,5 +1,5 @@
 //https://leetcode.com/problems/number-of-students-unable-to-eat-lunch
-
+//Simulation solution
  public int countStudents(int[] students, int[] sandwiches) {
         Stack <Integer> sands = new Stack<>();
         Queue <Integer> studs = new LinkedList<>();
@@ -24,4 +24,27 @@
             if(s >= studs.size() ) break;
         }
         return studs.size();
+    }
+//Constant space solution
+public int countStudents(int[] students, int[] sandwiches) {
+        int Circle = 0, Square = 0;
+
+        for (int student : students){
+            if (student == 1){
+                Square++;
+            } else {
+                Circle++;
+            }
+        }
+
+        for (int sandwiche : sandwiches){
+            if (sandwiche == 1 && Square > 0){
+                Square--;
+            } else if (sandwiche == 0 && Circle > 0){
+                Circle--;
+            } else {
+                return Square + Circle;
+            }
+        }
+        return 0;
     }
